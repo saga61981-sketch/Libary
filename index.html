@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookstore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <h2>BookStore</h2>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#books">Books</a></li>
+
+
+                    <li><a href="#contact">Contant</a></li>
+                </ul>
+            </nav>
+            <div class="icon">
+                <i class="fa-solid fa-search p-2"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="home-content">
+                    <div class="home-text">
+                        <button class="btn">Limited — 40% off</button>
+                        <h1>Discover Your <span class="next">Next Great</span> Read</h1>
+                        <p>Explore thousands of books, from timeless classics to <br>today's bestsellers. Free shipping
+                            on
+                            orders over $25.</p>
+                        <button class="all"> <a href="#books"> All Books</a></button>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Our library is more than just a place for books — it is a space for inspiration, knowledge,
+                            and creativity.</p><br>
+                        <p>We provide a wide collection of carefully selected books across different fields, from
+                            literature and history to technology and self-development.</p><br>
+                        <p>Our mission is to create a quiet and welcoming environment where readers can explore new
+                            ideas, grow intellectually, and enjoy the beauty of reading.</p>
+                    </div>
+                    <img src="./images/WhatsApp Image 2026-02-13 at 3.16.09 PM.jpeg">
+
+                </div>
+            </div>
+        </section>
+        <section id="books">
+            <h2>Books</h2>
+            <div class="container">
+
+                <div class="controls">
+                    <select id="categoryFilter">
+                        <option value="All">All Categories</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Classic">Classic</option>
+                        <option value="Dystopian">Dystopian</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Philosophical">Philosophical</option>
+                        <option value="Mystery">Mystery</option>
+                    </select>
+
+                    <input type="text" id="searchInput" placeholder="Search by book title...">
+                </div>
+
+                <div class="books" id="booksContainer"></div>
+
+            </div>
+
+
+        </section>
+        <section id="contact">
+            <div class="contact-content">
+                <div class="login-container">
+                    <div class="login-box">
+                        <h2>Welcome Back</h2>
+                        <p>Login to explore your favorite books</p>
+
+                        <form class="form">
+                            <div class="input-group">
+                                <input type="email" placeholder="Email Address" required>
+                            </div>
+
+                            <div class="input-group" id="password">
+                                <input type="password" placeholder="Password" required>
+                            </div>
+
+                            <button class="submit" type="submit">Login</button>
+
+                            <div class="extra-links">
+                                <a href="#">Forgot Password?</a>
+                                <p>Don't have an account? <a href="#">Sign Up</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-section text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row text">
+
+                <!-- About -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="fw-bold">BookStore</h5>
+                    <p class="small">
+                        An independent bookstore since 2012. We believe in the quiet stories and the beauty of a
+                        well-curated shelf.
+                    </p>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-goodreads"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+                <!-- Books -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Books</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">All books (500+)</a></li>
+                        <li><a href="#">New releases</a></li>
+                        <li><a href="#">Bestsellers</a></li>
+                        <li><a href="#">Award winners</a></li>
+                        <li><a href="#">Signed editions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Authors -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Authors</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Susan Merrill</a></li>
+                        <li><a href="#">Haruki Murakami</a></li>
+                        <li><a href="#">James Clear</a></li>
+                        <li><a href="#">Yuval Noah Harari</a></li>
+                        <li><a href="#">All authors A-Z</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-3 mb-4">
+                    <h6 class="fw-bold">Contact</h6>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt me-2"></i>88 Bookshelf Lane, New York</p>
+                    <p class="small mb-1"><i class="fas fa-envelope me-2"></i>hello@bookhaven.com</p>
+                    <p class="small"><i class="fas fa-phone me-2"></i>+1 (212) 555 0987</p>
+                </div>
+
+            </div>
+
+            <hr class="border-light">
+
+            <div class="text-center small">
+                © 2026 bookhaven — a complete, fully linked independent bookstore. Every book, every author, every
+                category.
+            </div>
+        </div>
+    </footer>
+
+    <script src="ps.js"></script>
+
+</body>
+
+</html>
